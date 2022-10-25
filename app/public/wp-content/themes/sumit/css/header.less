@@ -1,0 +1,290 @@
+@desktop:   ~"only screen and (min-width: 960px) and (max-width: 1199px)";
+@tablet:    ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@mobile:    ~"only screen and (min-width: 0) and (max-width: 719px)";
+
+.animacion(@duracion: 0.3s){
+    -webkit-transition:transform @duracion ease-in-out;
+    -moz-transition:transform @duracion ease-in-out;
+    -o-transition:transform @duracion ease-in-out;
+    transition:all @duracion ease-in-out;
+}
+
+.topnav{
+	//overflow: hidden;
+	background-color: #F2F4F6;
+	padding-top: 20px;
+	padding-bottom:20px;
+	box-shadow: 2px 2px 18px #888888;
+	position:relative;
+	z-index: 9;
+
+	.container{
+		display: flex;
+		justify-content: space-between;	
+		align-items: center;
+		position: relative;
+
+		.logo-menu{
+			a{
+				img{
+					width: 170px;
+
+					@media @tablet{
+						width: 160px;
+					}
+					
+					@media @mobile{
+						width: 160px;
+					}
+				}
+			}
+		}
+
+		.option{
+			
+			@media @tablet{
+				display: none;
+			}
+
+			@media @mobile{
+				display: none;
+			}
+			.options{
+				text-decoration: none;
+				color: #222936;
+				font-size: 20px;
+				vertical-align: middle;
+
+				&:hover{
+					color: #ffad06;
+					.animacion;
+				}
+			}	
+
+
+		}
+
+		.option-last{
+			
+			@media @tablet{
+				display: none;
+			}
+
+			@media @mobile{
+				display: none;
+			}
+
+			.options{
+				text-decoration: none;
+				color: #222936;
+				font-size: 20px;
+				margin-right: 20px;
+				vertical-align: middle;
+
+				&:hover{
+					color: #ffad06;
+					.animacion;
+				}
+
+				.logo-mobile{
+					vertical-align: sub;
+				}
+			}
+
+			.talk{
+				background-color:#272F3C;
+				color: #fff;
+				border:none;
+				padding:10px 30px;
+				text-decoration: none;
+				border-radius:10px;
+
+				&:hover{
+					background-color: #ffad06;
+					.animacion;
+				}
+			}
+		}
+
+		
+
+		.hamburguer{
+			display: none;
+
+			@media @tablet{
+				display: block;
+			}
+
+			@media @mobile{
+				display: block;
+			}
+		}
+
+
+		.overlay {
+			height: 0%;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			//background-color: rgb(0,0,0);
+			//background-color: rgba(0,0,0, 0.9);
+			background-image: linear-gradient(125deg, #F2F4F6 0px, #F2F4F6 900px, #F2F4F6 900px, #FFAD06 10px, #FFAD06 20px);
+			overflow-y: hidden;
+			transition: 0.5s;
+			box-shadow: 6px 6px 12px #22293629;
+
+			a {
+				padding: 8px;
+				text-decoration: none;
+				display: block;
+				transition: 0.3s;
+
+				&:hover{
+					color: #f1f1f1;
+				}
+
+				&:focus{
+					color: #f1f1f1;
+				}
+
+				.logo-mobile{
+					margin-top: 12px;
+					margin-left: 12px;
+					width: 160px;
+				}
+			}
+
+
+			.closebtn {
+				position: absolute;
+				top: 0px;
+				right: 13px;
+				font-size: 45px;
+				color: #828D9E;
+			}
+
+			.overlay-content {
+				position: relative;
+				top: 0;
+				//width: 100%;
+				text-align: left;
+				margin-top: 30px;
+				padding-left: 20px;
+				padding-right: 20px;
+
+				.menu-title{
+					padding: 8px;
+					margin-top: 0;
+					margin-bottom: 0;
+					font-size: 25px;
+					font-weight: 600;
+					padding-bottom: 15px;
+				}
+
+				a{
+					font-size: 24px;
+					color: #222936;
+					padding-bottom: 15px;
+				}
+
+				.language{
+					font-size: 25px;
+					font-weight: 600;
+					padding-bottom: 15px;
+					.logo-mobile{
+						width: 20px;	
+						margin-left: 0;					
+					}
+				}
+			}
+
+			@media @mobile{
+				
+			}
+		}
+
+	}
+
+	.desktop-shadow{
+		@media @tablet{
+			display: none;
+		}
+
+		@media @mobile{
+			display: none;
+		}
+	}
+}
+
+
+.dropdown {
+	float: left;
+	overflow: visible;
+}
+
+.dropdown .dropbtn {
+	color: #222936;
+	font-size: 20px;  
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	background-color: inherit;
+	margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+	//background-color: red;
+	cursor: pointer;
+	color: #ffad06;
+	.animacion;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #F2F4F6;
+	min-width: 200px;
+	//box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	z-index: 9;
+	padding-top: 10px;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.dropdown-content a:hover {
+	//background-color: #272f3c;
+	color: #ffad06;
+	.animacion;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
