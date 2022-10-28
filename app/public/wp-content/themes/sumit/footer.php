@@ -38,10 +38,10 @@
 				<div class="col-footer">
 					<h4>Community</h4>
 					<ul>
-						<li><a href="#">Log in to the platform</a></li>
-						<li><a href="#">Join as a transcriber</a></li>
-						<li><a href="#">Join as a translator</a></li>
-						<li><a href="#">Join as a representative</a></li>
+						<li><a href="https://editor-v2.sumit-ai.com/login" target="_blank">Log in to the platform</a></li>
+						<li><a href=" https://docs.google.com/forms/d/e/1FAIpQLSdJl42hjthJlH2m78r6H9YzYRb7dcbLNv-8wtuvt3bRiNzBPg/viewform" target="_blank">Join as a transcriber</a></li>
+						<li><a href=" https://docs.google.com/forms/d/e/1FAIpQLSdJl42hjthJlH2m78r6H9YzYRb7dcbLNv-8wtuvt3bRiNzBPg/viewform" target="_blank">Join as a translator</a></li>
+						<li><a href=" https://docs.google.com/forms/d/e/1FAIpQLSdJl42hjthJlH2m78r6H9YzYRb7dcbLNv-8wtuvt3bRiNzBPg/viewform" target="_blank">Join as a representative</a></li>
 					</ul>
 				</div>
 				<div class="col-footer">
@@ -74,13 +74,13 @@
 				<div class="col-social social-logos">
 					
 					<div class="social">
-						<a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+						<a href="https://www.linkedin.com/company/sumit-ai/" target="_blank" class="fa fa-linkedin"></a>
 					</div>
 					<div class="social">
-						<a href="https://www.facebook.com/sandblastinc" target="_blank" class="fa fa-facebook"></a>
+						<a href="https://www.facebook.com/sumit2020sumit" target="_blank" class="fa fa-facebook"></a>
 					</div>
 					<div class="social">
-						<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+						<a href="https://www.instagram.com/life_at_sumit.ai/" target="_blank" class="fa fa-instagram"></a>
 					</div>
 
 				</div>

@@ -27,7 +27,7 @@ if ( ! function_exists( 'sumit_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'sumit' ),
+			esc_html_x( ' %s', 'post date', 'sumit' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 

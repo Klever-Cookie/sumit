@@ -136,19 +136,19 @@ get_header(); ?>
 
                         <div class="social-icon">
                             <div class="social">
-                                <a href="https://www.linkedin.com/" class="" target="_blank">
+                                <a href="https://www.linkedin.com/company/sumit-ai/" class="" target="_blank">
                                     <img class="icon-img" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-brands.svg">
                                 </a>
                             </div>
 
                             <div class="social">
-                                <a href="https://www.facebook.com/" class="" target="_blank">
+                                <a href="https://www.facebook.com/sumit2020sumit" class="" target="_blank">
                                     <img class="icon-img" src="<?php echo get_template_directory_uri(); ?>/img/facebook-square-brands.svg">
                                 </a>
                             </div>
                             
                             <div class="social">
-                                <a href="https://www.instagram.com/" class="" target="_blank">
+                                <a href="https://www.instagram.com/life_at_sumit.ai/" class="" target="_blank">
                                     <img class="icon-img" src="<?php echo get_template_directory_uri(); ?>/img/instagram-square-brands.svg">
                                 </a>
                             </div>

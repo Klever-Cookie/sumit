@@ -3,15 +3,18 @@
  * The template for displaying archive pages
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
+ * Template Name: Archives
  * @package sumit
  */
 
 get_header();
 ?>
+	
+<!--style: archive.less -->
 
-	<main id="primary" class="site-main">
-
+	<main id="primary" class="site-main posts-sumit">
+		
+		
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -20,6 +23,8 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+
+			
 
 			<?php
 			/* Start the Loop */
@@ -31,7 +36,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				get_template_part( 'template-parts/content-archive' );
 
 			endwhile;
 
@@ -39,7 +44,7 @@ get_header();
 
 		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+			get_template_part( 'template-parts/content-archive' );
 
 		endif;
 		?>
@@ -47,5 +52,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
