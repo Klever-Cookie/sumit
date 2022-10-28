@@ -23,7 +23,7 @@ get_header(); ?>
             
             <div class="col-hero col-text">
                 <div class="col-content">
-                    <h1>Level Up, Write It Down</h1>
+                    <h1>LevelL Up, Write It Down</h1>
                     <h3>One platform for your transcription needs</h3>
                     <a href="/#contact" class="learn-more">I Want To Learn More</a>
                 </div>
