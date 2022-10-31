@@ -21,6 +21,7 @@ wp-content/cache/supercache/*
 .smushit-status
 .gitattributes
 _wpeprivate*
+wp-content/.DS_Store
 wp-content/object-cache.php
 wp-content/mu-plugins/mu-plugin.php
 wp-content/mu-plugins/slt-force-strong-passwords.php
@@ -113,3 +114,5 @@ wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 
 wp-content/ai1wm-backups
 /wp-content/ai1wm-backups
+wp-content/wflogs
+/wp-content/wflogs
